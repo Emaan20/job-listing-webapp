@@ -99,8 +99,6 @@ If selectors change on the site, open `scrape.py` and tweak the CSS/XPath noted 
 - **Env**: If using Postgres/MySQL, set `DATABASE_URL` before running the scraper too.
 
 ---
-## 5) What to Show in Your Video
-1. `GET/POST/PUT/DELETE` on `/api/jobs` in Postman or browser.
-2. Frontend listing jobs, adding, editing, deleting, filtering and sorting.
-3. Run `python Scraper/scrape.py --limit 20` and refresh frontend to see new jobs.
-4. Briefly walk through code structure and your choices.
+LIVE DEMO LINK:
+https://job-listing-webapp-djjs.vercel.app/
+

@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const BASE = import.meta.env.VITE_API_BASE || 'http://127.0.0.1:5000/api'
+const BASE = import.meta.env.VITE_API_BASE || 'https://job-listing-backend-veyc.onrender.com/api'
 
 export async function getJobs(params = {}) {
   const { data } = await axios.get(`${BASE}/jobs`, { params })

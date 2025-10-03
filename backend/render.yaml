@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: flask-jobs-app
+    env: python
+    plan: free       # or starter, standard, depending on your needs
+    buildCommand: |
+      pip install -r requirements.txt
+    startCommand: gunicorn "app:create_app()"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: DATABASE_URL
+        sync: false   # will use Render's dashboard or .env for actual value

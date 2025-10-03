@@ -2,8 +2,10 @@
 from flask import Blueprint, request, jsonify, abort
 from datetime import datetime
 from sqlalchemy import or_
-from backend.db import db
-from backend.models.job import Job
+# RIGHT
+from db import db
+from models.job import Job
+
 
 job_bp = Blueprint("job_bp", __name__)
 

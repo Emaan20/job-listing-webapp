@@ -8,3 +8,4 @@ python-dotenv==1.0.1
 selenium==4.25.0
 webdriver-manager==4.0.2
 alembic==1.16.5
+gunicorn

@@ -1,6 +1,9 @@
 # backend/models/job.py
 from datetime import datetime
-from backend.db import db
+# RIGHT
+from db import db
+
+
 
 class Job(db.Model):
     __tablename__ = "jobs"

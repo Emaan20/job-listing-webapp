@@ -1,33 +1,27 @@
-# --- Python / Flask ---
-venv/
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-instance/
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+
+# Env files
+.env
+**/.env
+
+# Local DBs
 *.db
 
-# environment & secrets
-.env
-.env.*
-
-# Alembic cache
-alembic/*.pyc
-
-# --- Node / React ---
-frontend/node_modules/
-frontend/.vite/
-frontend/dist/
-frontend/build/
-
-# logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Alembic cache (keep migrations!)
+alembic/versions/__pycache__/
 
 # OS/editor junk
 .DS_Store
 Thumbs.db
-.vscode/
 .idea/
+.vscode/

@@ -22,7 +22,7 @@ def create_app():
     # Print masked DB URL  for debug
     print("DB =", db_url.replace(os.getenv("YourStrongPassword123", ""), "*****"))
 
-    CORS(app)  
+    CORS(app, resources={r"/api/*": {"origins": "*"}})
 
     db.init_app(app)
     with app.app_context():

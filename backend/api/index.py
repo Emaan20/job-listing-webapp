@@ -1,6 +1,5 @@
-# api/index.py
-import os, sys
-sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
+# backend/api/index.py
 from app import create_app
 
-app = create_app()  # vercel will serve this WSGI app
+# Vercel looks for a module-level WSGI `app`
+app = create_app()

@@ -5,8 +5,8 @@ from flask_cors import CORS
 from dotenv import load_dotenv
 from urllib.parse import urlsplit, urlunsplit
 
-from backend.db import db
-from backend.routes.job_routes import job_bp
+from db import db
+from routes.job_routes import job_bp
 
 load_dotenv()  # local .env; Vercel uses project env vars
 

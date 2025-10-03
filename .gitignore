@@ -14,7 +14,7 @@ node_modules/
 #frontend/.env
 .env
 **/.env
-!frontend/.env
+
 
 # Local DBs
 *.db

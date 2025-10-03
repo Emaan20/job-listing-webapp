@@ -11,6 +11,7 @@ env/
 node_modules/
 
 # Env files
+frontend/.env
 .env
 **/.env
 
